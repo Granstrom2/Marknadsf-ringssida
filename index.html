@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home" class="active">Logo</a>
+
+        <div id="myLinks" class="nav-text">
+          <a href="#news">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <!----Kan inte hur det funkar-->
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+      </nav>
+    </header>
+
+    <main>
+      <!-- The App Section -->
+      <div class="container">
+        <div class="row">
+          <div class="column-66">
+            <h1 class="xlarge-font"><b>Food</b></h1>
+
+            <h1 class="large-font" style="color: MediumSeaGreen">
+              <b>Why buy it?</b>
+            </h1>
+            <p>
+              <span style="font-size: 36px">Make food like a pro.</span> You
+              should buy this app because lorem ipsum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="button">Download</button>
+          </div>
+
+          <div class="column-33">
+            <img src="Logga Husmanskost.PNG" width="335" height="471" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
