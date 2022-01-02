@@ -17,31 +17,27 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="myTopnav">
         <a href="#home" class="active"><i class="fas fa-utensils"></i></a>
 
-        <div id="myLinks" class="nav-text">
-          <a href="#news">Home</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="Contact.html">Contact</a>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-
-        <!----Kan inte hur det funkar-->
-        <script>
-          function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          }
-        </script>
       </nav>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
     </header>
 
     <main>
@@ -60,13 +56,15 @@
               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <button class="button">
-              Download now <i class="fab fa-google-play"></i>
+            <button class="button"> 
+                Download now <i class="fab fa-google-play"></i>
+              </a>
             </button>
           </div>
 
           <div class="column-33">
             <img src="Husmanskost1.png" width="80%" />
+            
           </div>
         </div>
       </div>
@@ -104,17 +102,20 @@
         </div>
       </div>
 
-      <div class="flex-container">
-        <div class="flex-item-left">
-          <img src="Husmanskost_pic3.png" style="width: 80%" />
-        </div>
-        <div class="flex-item-middel">
-          <img src="Husmanskost_pic3.png" style="width: 80%" />
-        </div>
-        <div class="flex-item-right">
-          <img src="Husmanskost_pic3.png" style="width: 80%" />
-        </div>
-      </div>
+      
+
+<div class="container" style="background-color: white">
+  <div class="row">
+    <div class="column-33">
+      <img src="Logga Husmanskost.PNG" alt="Logga" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Appen</b></h1>
+      <h1 class="large-font"><b>Hur funkar det?</b></h1>
+      <p><span style="font-size:24px">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</div>
 
       <div class="downlowd">
         <h1>What are you waiting for?</h1>
