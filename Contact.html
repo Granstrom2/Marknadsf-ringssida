@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <nav id="myTopnav">
+      <nav id="myTopnav" class="topnav">
         <a href="#home" class="active"><i class="fas fa-utensils"></i></a>
 
         <a href="index.html">Home</a>
@@ -29,7 +29,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </nav>
-
+ <!--kan inte-->
       <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -42,48 +42,48 @@
       </script>
 
       <div class="header">
-        <h1>Contact us</h1>
-        <p>What can we help you?</p>
+        <h2>Kontakta oss</h2>
+        <p>Hur kan vi hjälpa dig?</p>
       </div>
     </header>
 
     <main>
       <div class="main-header">
-        <p>Let's Start a Conversation</p>
+        <p>Låt oss börja en konversation</p>
       </div>
 
       <div class="flex-container">
         <div class="flex-item-left">
-          <h2>Ask how we can help you:</h2>
+          <h2>Fråga hur vi kan hjälpa dig:</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            placeat aperiam deserunt natus consequatur minima, eligendi
-            voluptate commodi nihil dolores dolorem vitae, nostrum eos? Odio
-            eligendi dolorum iure autem! Perspiciatis!
+            Hör gärna av dig vid exempel buggar eller korektion i appen eller hemsidan. Men ocskå frågor och
+            funderingar kring recept eller bilder. 
           </p>
         </div>
 
         <div class="flex-item-middel">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
+          <form action="contact.php"  method="post">
+          </form>
+            <label for="fname">Full name</label>
             <input
               type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
+              id="name"
+              name="fullname"
+              placeholder="Your full name.."
             />
 
-            <label for="lname">Last Name</label>
+            <label for="lname">Your Gmail</label>
             <input
               type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
+              id="gmail"
+              name="gmail"
+              placeholder="Your Gmail.."
             />
 
             <label for="subject">Subject</label>
             <textarea
               id="subject"
+              type="text"
               name="subject"
               placeholder="Write something.."
               style="height: 200px"
@@ -95,11 +95,16 @@
       </div>
 
       <div class="downlowd">
-        <h1>What are you waiting for?</h1>
-        <p>You have schroll to the bottum of the page</p>
-        <button class="button">
-          Download now <i class="fab fa-google-play"></i>
-        </button>
+        <h1>Vad väntar på på?</h1>
+        <p>Du har schrollat till botten av sidan</p>
+        <a
+          href="https://play.google.com/store/apps/details?id=se.dataingenjoren.husmanskost"
+          target="_blank"
+        >
+          <button class="button">
+            Download now <i class="fab fa-google-play"></i>
+          </button>
+        </a>
       </div>
     </main>
 
@@ -107,11 +112,13 @@
       <div class="footer-content">
         <h3>Husmanskost</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-          aliquid! Et magni, eaque culpa sunt aspernatur, hic consequuntur aut
-          recusandae eveniet cum dolorum sint accusamus delectus quibusdam ut
-          animi ipsam.
+          Kontakta mig på
+          <a
+            href="mailto:mikael.granstrom@dataingenjoren.se?subject=Fråga till Husmanskost&body=Hej Husmanskost,%0d&0a"
+            >Mail till Husmanskost</a
+          >
         </p>
+        <p>Eller via mobil +46706142966</p>
 
         <ul class="socials">
           <li>

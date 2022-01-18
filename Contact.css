@@ -195,16 +195,32 @@ input[type="submit"]:hover {
   border: none;
   color: white;
   padding: 16px 30px;
-  font-size: 25px;
+  font-size: 17px;
   cursor: pointer;
   background-color: #111;
   border-radius: 35px;
   margin-top: 50px;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
-.button:hover {
-  background-color: white;
-  color: black;
+@keyframes example {
+  from {
+    background-color: #111;
+  }
+  to {
+    background-color: white;
+    color: #111;
+  }
+}
+
+.fa-google-play {
+  color: rgb(190, 246, 89);
+  color: linear-gradient(
+    90deg,
+    rgba(190, 246, 89, 1) 5%,
+    rgba(37, 132, 57, 1) 100%
+  );
 }
 
 .container {
@@ -276,6 +292,10 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+  opacity: 0.6;
+}
+.footer-content h3:hover {
+  opacity: 1;
 }
 
 .footer-content p {

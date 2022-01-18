@@ -99,11 +99,11 @@ main {
 }
 
 .large-font {
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .xlarge-font {
-  font-size: 58px;
+  font-size: 48px;
   padding-right: 5px;
 }
 
@@ -116,11 +116,18 @@ main {
   background-color: #111;
   border-radius: 35px;
   margin-top: 50px;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
-.button:hover {
-  background-color: white;
-  color: black;
+@keyframes example {
+  from {
+    background-color: #111;
+  }
+  to {
+    background-color: white;
+    color: #111;
+  }
 }
 
 img {
@@ -151,20 +158,16 @@ img {
 .flex-container h2 {
   padding: 10px;
 }
-.fa-tv {
+.fa-tv,
+.fa-android,
+.fa-images {
   font-size: 40px;
   margin: 10px;
   padding: 10px;
 }
-.flex-item-left {
-  padding: 10px;
-  flex: 33.3%;
-}
 
-.flex-item-middel {
-  padding: 10px;
-  flex: 33.3%;
-}
+.flex-item-left,
+.flex-item-middel,
 .flex-item-right {
   padding: 10px;
   flex: 33.3%;
@@ -191,6 +194,14 @@ img {
   );
 }
 
+.button a:hover i {
+  color: rgb(190, 246, 89);
+  color: linear-gradient(
+    90deg,
+    rgba(190, 246, 89, 1) 5%,
+    rgba(37, 132, 57, 1) 100%
+  );
+}
 footer {
   bottom: 0;
   left: 0;
@@ -213,6 +224,10 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+  opacity: 0.6;
+}
+.footer-content h3:hover {
+  opacity: 1;
 }
 
 .footer-content p {
